@@ -51,12 +51,10 @@ static unsigned long	ft_getrows(char const *s, char c)
 static char	*ft_getword(char const *s, char c)
 {
 	unsigned long	i;
-	unsigned long	len;
 	unsigned long	j;
 
 	i = 0;
 	j = 0;
-	len = ft_strlen(s);
 	while (s[i] != c && s[i])
 	{
 		j++;
@@ -90,6 +88,5 @@ char	**ft_split(char const *s, char c)
 		}
 	}
 	res[i] = 0;
-	i = 0;
 	return (res);
 }
